@@ -1,49 +1,47 @@
 <!DOCTYPE html>
 <html>
-<head>
-<!-- HEAD ********************************************************** -->
-<style>
-<!-- STYLE********************************************************** -->
-	body {
-	  background-color: lightblue;
-	  padding: 1em;
-	}
+  <head>
+    <!-- HEAD ********************************************************** -->
+    <style>
+      <!-- STYLE********************************************************** -->
+      	body {
+      	  background-color: lightblue;
+      	  padding: 1em;
+      	}
 
-	h1 {
-	  color: white;
-	  text-align: center;
-	}
+      	h1 {
+      	  color: white;
+      	  text-align: center;
+      	}
 
-	p {
-	  font-family: verdana;
-	  font-size: 20px;
-	}
+      	p {
+      	  font-family: verdana;
+      	  font-size: 20px;
+      	}
 
-<!-- ********************************************************** -->
-</style>
-<script>
-<!-- SCRIPT********************************************************* -->
+      <!-- ********************************************************** -->
+    </style>
+    <!-- script type="module" src="index.js" / -->
 
+    <script>
+      <!-- SCRIPT********************************************************* -->
+      function myFunction() {
+        document.getElementById('demo').innerHTML = 'Paragraph changed.';
+}
+    </script>
+  </head>
 
-function myFunction() {
-	  document.getElementById("demo").innerHTML = "Paragraph changed.";
-	};
+  <body>
+    <h2>Demo JavaScript in Head</h2>
 
-</script>
-</head>
+    <p id="demo">A Paragraph.</p>
 
+    <button type="button" onclick="myFunction()">Try it</button>
 
-<body>
-
-<h2>Demo JavaScript in Head</h2>
-
-<p id="demo">A Paragraph.</p>
-
-<button type="button" onclick="myFunction()">Try it</button>
-
-
-<fluent-data-grid id="defaultGrid" style="max-height: 30em; overflow-y: auto;">
-</fluent-data-grid>
-
-</body>
-</html> 
+    <fluent-data-grid
+      id="defaultGrid"
+      style="max-height: 30em; overflow-y: auto"
+    >
+    </fluent-data-grid>
+  </body>
+</html>

@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
+    "@fluentui/web-components": "^2.5.8",
     "nodemon": "^2.0.7"
   },
   "scripts": {}
