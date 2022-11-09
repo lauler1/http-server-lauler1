@@ -1,7 +1,7 @@
 var fs = require('fs'),
     http = require('http');
 
-const http_port = 80
+const http_port = 8080
 
 http.createServer(function (req, res) {
 
@@ -29,7 +29,7 @@ http.createServer(function (req, res) {
     }
 
 
-    res.writeHead(200);
+    //res.writeHead(200);
     res.end(data);
   });
 }).listen(http_port); //the server object listens on port
