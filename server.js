@@ -20,16 +20,11 @@ http.createServer(function (req, res) {
     }else if (req.url.includes(".css")){
       res.writeHead(200, {'Content-Type': 'text/css'});
       console.log('text/css');
-    }else if (req.url.includes(".html")){
-      res.writeHead(200, {'Content-Type': 'application/xhtml'});
-      console.log('application/xhtml+xml');
     }else{
-      res.writeHead(200, {'Content-Type': 'text/plain'});
+      res.writeHead(200);
       console.log('text/plain');
     }
-
-
-    //res.writeHead(200);
+    
     res.end(data);
   });
 }).listen(http_port); //the server object listens on port
